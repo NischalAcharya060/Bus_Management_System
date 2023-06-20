@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header {
+  width: 30%;
+  margin: 150px auto 0px;
+  color: white;
+  background: #5f9ea0;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form,
+.content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #b0c4de;
+  background: #5f9ea0;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  cursor:pointer;
+  color: rgb(255, 255, 255);
+  background: #2155ff;
+  border: none;
+  border-radius: 5px
+}
+.btn:hover {
+  background: #062141;
+  color: #ffffff;
+}
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-group label {
+    margin-bottom: 0.5rem;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .input-group button {
+    width: 100%;
+  }
+  form,
+.content {
+  width: fit-content;
+}
+.header{
+  width: fit-content;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  .header h2 {
+    font-size: 1.5rem;
+  }
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-group label {
+    margin-bottom: 0.5rem;
+  }
+  .input-group input {
+    width: 100%;
+  }
+  .input-group button {
+    width: 100%;
+  }
+  form,
+.content {
+  width: fit-content;
+}
+.header{
+  width: fit-content;
+}
+}
